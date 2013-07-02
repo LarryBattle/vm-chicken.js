@@ -1,9 +1,8 @@
-
 var chicken = function fn(input, code) {
   var undefined = void(0);
 	if (code) {
 		fn.code = code;
-		fn.$code =  - (input == code);
+		fn.$code = (input == code) ? 0 : -1;
 		fn.chicken = [undefined, input, fn.$code];
 		input = fn.$code;
 		code = fn.$code;
